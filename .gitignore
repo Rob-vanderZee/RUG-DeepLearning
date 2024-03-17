@@ -1,3 +1,4 @@
 # Don't want to upload the datasets to Github
-Data/
+Data/Original/*
+Data/PointCloud/*
 

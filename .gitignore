@@ -1,4 +1,3 @@
 # Don't want to upload the datasets to Github
-Data/Original/*
-Data/PointCloud/*
+# That's handled by the .gitignore files in Data/Original/ and Data/PointCloud/
 

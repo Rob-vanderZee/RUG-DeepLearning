@@ -1,3 +1,6 @@
 # Don't want to upload the datasets to Github
 # That's handled by the .gitignore files in Data/Original/ and Data/PointCloud/
 
+# Python/PyCharm stuff
+.idea/
+venv/

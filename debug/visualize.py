@@ -1,3 +1,6 @@
+# Code (mostly) from BALRAJ ASHWATH
+# source: https://www.kaggle.com/code/balraj98/pointnet-for-3d-object-classification-ii-pytorch
+
 import numpy as np
 from path import Path
 import plotly.graph_objects as go
@@ -53,8 +56,9 @@ def pcshow(xs,ys,zs):
 
 
 path = Path("../Data/Original/ModelNet40")
+label = "bed"
 
-with open(path / "airplane/train/airplane_0001.off", 'r') as f:
+with open(path / label + "/train/" + label + "_0001.off", 'r') as f:
     verts, faces = read_off(f)
 
 i, j, k = np.array(faces).T

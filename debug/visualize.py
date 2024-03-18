@@ -56,7 +56,7 @@ def pcshow(xs,ys,zs):
 
 
 path = Path("../Data/Original/ModelNet40")
-label = "bed"
+label = "cone"
 
 with open(path / label + "/train/" + label + "_0001.off", 'r') as f:
     verts, faces = read_off(f)

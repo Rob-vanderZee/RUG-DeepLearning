@@ -2,7 +2,8 @@ from path import Path
 import torch
 
 from dataloader import train_dataloader, test_dataloader
-from model import PointNet, pointnetloss
+from model import PointNet
+import training
 
 
 path = Path("./Data/Original/ModelNet40")
@@ -15,4 +16,5 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 pointnet.to(device)
 
 optimizer = torch.optim.Adam(pointnet.parameters(), lr=0.0008)
-parameters = pointnet.parameters()
+
+training.train(pointnet, train_loader, optimizer)

@@ -3,4 +3,5 @@
 
 # Python/PyCharm stuff
 .idea/
+__pycache__/
 venv/

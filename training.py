@@ -11,7 +11,7 @@ def train(model, train_loader, optimizer, val_loader=None,  epochs=1):
     for epoch in range(epochs):
         model.train()
         running_loss = 0.0
-        for i, data in enumerate(train_loader, start=300):  # debugging: start should be 0
+        for i, data in enumerate(train_loader, start=0):
             inputs, labels = data['pointcloud'].to(device).float(), data['category'].to(device)
             optimizer.zero_grad()
             outputs, m3x3, m64x64 = model(inputs.transpose(1, 2))
